@@ -15,7 +15,7 @@
   </ul>
 </nav>
 
-<p class="medium-text mb20">Подписчики</p>
+<p class="medium-text mb20">Підписники</p>
 
 @for (subscriber of subscribers$ | async; track subscriber.id) {
 <app-subscriber-card [profile]="subscriber"></app-subscriber-card>
@@ -23,7 +23,7 @@
 
 <div class="mt20 to-subscribers">
   <a [routerLink]="['/subscribers']" class="to-subscribers-link medium-text"
-    >Все подписчики</a
+    >Всі підписники</a
   >
   <svg icon="arrow" class="to-subscribers-icon"></svg>
 </div>

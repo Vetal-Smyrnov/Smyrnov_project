@@ -5,12 +5,12 @@
   @if(isMyPage()) {
 
   <a class="btn to-setting-btn" [routerLink]="['/settings']">
-    Редактировать
+    Редагувати
     <svg icon="settings" class="to-setting-icon"></svg>
   </a>
   } @else {
   <button class="btn to-setting-btn" (click)="sendMessage(profile.id)">
-    Написать
+    Написати
   </button>
   }
 </header>
@@ -19,7 +19,7 @@
   <app-post-feed></app-post-feed>
 
   <div>
-    <h3 class="h6 mb16">Подписчики</h3>
+    <h3 class="h6 mb16">Підписники</h3>
 
     <div class="subscribers-wrapper mb32">
       @for (subscriber of subcribers$ | async; track subscriber.id) {
@@ -33,14 +33,14 @@
       <a class="to-subscribers-search" [routerLink]="['/search']"> </a>
     </div>
 
-    <h3 class="h6 mb16">Навыки</h3>
+    <h3 class="h6 mb16">Скіл</h3>
     <div class="stack-wrapper mb32">
       @for (skill of profile.stack; track skill) {
       <div class="skill-tag">{{ skill }}</div>
       }
-    </div>  
+    </div>
 
-    <h3 class="h6 mb16">О cебе</h3>
+    <h3 class="h6 mb16">Про себе</h3>
     <p class="medium-text">{{ profile.description }}</p>
   </div>
 </main>

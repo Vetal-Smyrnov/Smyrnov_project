@@ -31,17 +31,17 @@ export class SidebarComponent {
 
   menuItems = [
     {
-      label: 'Моя страница',
+      label: 'Моя сторінка',
       icon: 'home',
       link: 'profile/me',
     },
     {
-      label: 'Чаты',
+      label: 'Чати',
       icon: 'chats',
       link: 'chats',
     },
     {
-      label: 'Поиск',
+      label: 'Пошук',
       icon: 'search',
       link: 'search',
     },
